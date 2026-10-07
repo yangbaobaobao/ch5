@@ -8,7 +8,7 @@ public class Triangle {
 			int b = sc.nextInt();
 			int c = sc.nextInt();
 			
-			System.out.println("You " + ((a < b+c || b < a+c || c < a+b) ? "can " : "cannot ") + "make a triangle");
+			System.out.println("You " + (!(a < b+c || b < a+c || c < a+b) ? "cannot " : "can ") + "make a triangle");
 		}
 	}
 }
